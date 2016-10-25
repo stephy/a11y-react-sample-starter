@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
-import SizePicker from './components/sizePicker';
-import Dropdown from './components/dropdown';
+import Flyout from './components/flyout';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <div id="wrapper-header">
+          <i class="custom-swoosh g72-swoosh fs28-sm"></i>
         </div>
 
-        <SizePicker />
-        <Dropdown />
+        <div id="wrapper-nav">
+
+        </div>
+
+        <div id="wrapper-content">
+          
+          <p class="ncss-base">Hello Nike!</p>
+          <Flyout />
+        </div>
+
+        <div id="wrapper-footer">
+
+        </div>
       </div>
     );
   }
